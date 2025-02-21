@@ -1,12 +1,121 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- es la version del html-->
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+<head><!--Permite indicar al navegador como esta constituido el sitio web-->
+    <meta charset="UTF-8"><!--Permite definir el conjunto de caracteres simbolo etc -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Hola contactos!!!!!!!</h1>
-    <a href=""></a>
+<body><!--es todo el contenido de la pagina web-->
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q">
+        <button type="submit">Buscar</button>
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+<h1>Datos</h1>
+    <form action="#">
+        <label for="nom">Nombre: </label>
+        <input 
+        id="nom"
+        type="text" name="nombre" placeholder="Ingrese su nombre">
+
+        <br>
+        <label>Apellido:</label>
+        <input type="text" name="apellido" value="Gomez"
+        disabled>
+        <div>
+            <label>e-mail</label>
+            <input type="email" name="correo" placeholder="example@com.co"
+            maxlength="20"
+            required> <!--REQUIRED_CAMPO OBLIGATORIO-->
+        </div>
+        <div>
+            <label>Edad</label>
+            <input type="number" name="edad" value="18" min="1" max="120">
+        </div>
+        <div>
+            <fieldset> <!--cajita-->
+                <legend>datos de la u</legend>
+                <label>Fecha de matricula</label>
+                <input type="date" name="fechamatricula">
+                <input type="datetime" name="fechamatricula">
+                <input type="datetime-local" name="fechamatricula">
+            </fieldset>
+            <div>
+                <label>Foto</label>
+                <input type="file" name="Foto">
+            </div>
+            
+        </div>
+        <div>
+            <label>Color favorito</label>
+            <input type="color" name="ColorFav">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label> clasificacion</label>
+            <br>
+            <label>
+                <input type="radio" name="Clasification" value="a">
+                Opcion 1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="Clasification" value="b" checked>
+                Opcion 2
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="Clasification" value="c">
+                Opcion 3
+            </label>
+        </div>
+     <fieldset>
+        <legend>Jobs</legend>
+        <label>
+            <input type="checkbox" name="opt1">
+            opcion 1
+        </label>
+        <label>
+            <input type="checkbox" name="opt2" checked>
+            opcion 2 
+        </label>
+        <label>
+            <input type="checkbox" name="opt3">
+            opcion 2
+        </label>
+        <label>
+            <input type="checkbox" name="opt4">
+            opcion 3
+        </label>
+     </fieldset>
+       <div>
+        <label>Ciudad</label>
+        <select name="Ciudad">
+            <option value="1">Tunja</option>
+            <option value="2">Sogamoso</option>
+            <option value="3" selected>Duitama</option>
+        </select>
+       </div>
+       <div>
+        <label>Observaciones</label>
+        <textarea name="Obs" cols="25"  rows="10">pepito</textarea>
+       </div>
+       <div>
+        <button type="submit">enviar</button>
+        <input type="submit" value="Enviar">
+    </div>
+    <div>
+        <label for="">codigo</label>
+        <input type="hidden" name="cod" value="12345">
+    </div>
+    </form>
 </body>
 </html>
